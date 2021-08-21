@@ -1,0 +1,244 @@
+body {
+  margin: 0;
+  font-family: "Barlow" , sans-serif;
+}
+header {
+  background-color: #E5DEEB;
+  padding: 20px 75px;
+  
+}
+header ul {
+  float: right;
+  color: #333333;
+  padding: 20px;
+  
+}
+header li {
+  display: inline-block;
+  padding: 0px 20px;
+  font-size: 18px;
+  font-weight:bold
+
+}
+
+header li :hover{
+  color:#B1A0A8
+}
+
+header a {
+  display: inline-block;
+  color: #333333;
+  text-decoration: none;
+}
+.heroImg {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto;
+  grid-template-rows: 00px 300px;
+  grid-gap: 200px;
+  background-color: #E5DEEB;
+  padding: 50px;
+  font-family: "Barlow" , sans-serif;
+  text-align: left;
+ 
+}
+.heroImg h1{
+  font-size: 48px;
+  color: #333333;
+ 
+}
+h2{
+  font-size: 30px;
+  color: #333333;
+}
+p{
+  font-size: 24px;
+  color: #333333;
+  text-align: justify;
+}
+.content {
+  max-width: 500px;
+  text-align: left;
+  margin: auto;
+  padding: auto;
+  
+}
+
+button {
+  background-color: #E5DEEB;
+    border: none;
+    color: #333333;
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 75px 5px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: 'Barlow', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+footer {
+  background-color: #E5DEEB;
+  color: #333333;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+}
+footer h3 {
+  padding-top: 50px;
+  font-size: 36px;
+  font-family: 'Barlow', sans-serif;
+}
+footer ul {
+      display: inline-block;
+      vertical-align: top ;
+      padding: 0px;
+      margin-top: 0px;
+     
+}
+footer li {
+  display: inline-block;
+  padding: 15px;
+  align-content: center;
+  cursor: pointer;
+}
+footer p {
+  font-size: 16px;
+  font-family: 'Barlow', sans-serif;
+  text-align: center;
+}
+
+.heading {
+  text-align: center;
+  padding: 15px 5px;
+  font-size: 30px;
+}
+/* My UX Skills Section */
+.flexContainer {
+  display: flex;
+  
+}
+.flexContainer div {
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.mySkills h1 {
+  margin-top: 50px;
+  font-size: 33px;
+  color: #333333;
+  text-align: center;
+}
+/* My Work Section */
+.myWork {
+ 
+  padding-top: 10px;
+  background-color: #FFFFFF;
+}
+.workGrid {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 45% 45% ;
+  grid-template-rows: 420px 420px 420px 420px;
+  align-content: center;
+  grid-template-areas:
+  "img1 content1"
+  "img2 content2 "
+  "img3 content3"
+  "img4 content4";
+
+}
+.workGrid content {
+  width: auto;
+  display: block;
+  align-content: center;
+  cursor: pointer;
+}
+.workGrid img {
+  width: auto;
+  max-width: 350px;
+  margin: auto;
+  display: block;
+  cursor: pointer;
+  align-content: left;
+  
+}
+.img1 {
+  grid-area: img1;
+}
+.img2 {
+  grid-area: img2;
+}
+.img3 {
+  grid-area: img3;
+}
+.img4 {
+  grid-area: img4;
+}
+.img1, .img2, .img3, .img4 .content1, .content2, .content3, .content4 {
+  padding: auto;
+  justify-content: space-evenly;
+}
+.content1 {
+  grid-area: content1;
+  
+}
+.content2 {
+  grid-area: content2;
+}
+.content3 {
+  grid-area: content3;
+}
+.content4 {
+  grid-area: content4;
+}
+
+.myWork h1 {
+
+  font-size: 36px;
+  color: #333333;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .flexContainer {
+    flex-direction: column;
+    padding: auto;
+    width: auto;
+    align-items: center;
+    text-align: center;
+  }
+  .heroImg {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+   align-items: center;
+   grid-template-areas:
+   "photo"
+   "content"
+   ;
+   
+  }
+  
+  .workGrid {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+   justify-content: space-evenly;
+   align-items: center;
+   text-align: center;
+   grid-template-areas:
+   "img1"
+   "content1"
+   "img2"
+   "content2"
+   "img3"
+   "content3"
+   "img4"
+   "content4"
+   ;
+  }
+
+}
