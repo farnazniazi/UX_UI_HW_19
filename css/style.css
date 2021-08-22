@@ -2,11 +2,16 @@ body {
   margin: 0;
   font-family: "Barlow" , sans-serif;
 }
+
+html {
+  scroll-behavior:smooth
+}
+
 header {
   background-color: #E5DEEB;
   padding: 20px 75px;
-  
 }
+
 header ul {
   float: right;
   color: #333333;
@@ -22,7 +27,8 @@ header li {
 }
 
 header li :hover{
-  color:#B1A0A8
+  color:#B1A0A8;
+  font-size: 19px;
 }
 
 header a {
@@ -30,6 +36,7 @@ header a {
   color: #333333;
   text-decoration: none;
 }
+
 .heroImg {
   display: grid;
   justify-content: space-evenly;
@@ -79,6 +86,18 @@ button {
     font-family: 'Barlow', sans-serif;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+button:hover{
+  background-color: #B1A0A8;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  transition: 0.3s;
+  
+}
+ 
+
+
 footer {
   background-color: #E5DEEB;
   color: #333333;
@@ -165,10 +184,11 @@ footer p {
   display: block;
   cursor: pointer;
   align-content: left;
-  
+
 }
 .img1 {
   grid-area: img1;
+  
 }
 .img2 {
   grid-area: img2;
@@ -240,5 +260,8 @@ footer p {
    "content4"
    ;
   }
+
+ 
+  
 
 }
